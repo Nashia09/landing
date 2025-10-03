@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 50px;
+}
+
+.faculty-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 900px;
+  margin: auto;
+  transition: transform 0.3s ease;
+}
+
+.faculty-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Alternate Layout */
+.faculty-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.card-image-container {
+  position: relative;
+  flex: 1;
+  height: 220px;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+}
+
+.faculty-card.reverse .card-image {
+  border-radius: 0 15px 15px 0;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, rgba(255,87,34,0.7), rgba(255,0,0,0.6));
+  border-radius: 15px 0 0 15px;
+}
+
+.faculty-card.reverse .image-overlay {
+  border-radius: 0 15px 15px 0;
+}
+
+.card-content {
+  flex: 2;
+  padding: 30px;
+}
+
+.card-date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  color: #222;
+  line-height: 1.4;
+}
+
+.card-description {
+  font-size: 15px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.card-button {
+  background: linear-gradient(to right, #4CAF50, #2E7D32);
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.card-button:hover {
+  background: linear-gradient(to right, #81C784, #388E3C);
+}

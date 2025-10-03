@@ -1,0 +1,241 @@
+/*====== STATISTICS CSS ======*/
+
+/* Base styles */
+#statistics-part {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #f1f5f9 100%);
+    padding: 65px 0 120px;
+    color: #1e293b;
+}
+
+.year-section {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #e2e8f0;
+}
+
+.year-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 4px solid #2563eb;
+    display: inline-block;
+    color: #07294d;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Card styles */
+.stat-card {
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    border: 2px solid;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card.undergrad {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    border-color: #93c5fd;
+}
+
+.stat-card.postgrad {
+    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+    border-color: #6ee7b7;
+}
+
+.stat-card.budget {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border-color: #fcd34d;
+}
+
+.stat-card.igr {
+    background: linear-gradient(135deg, #ccfbf1 0%, #99f6e4 100%);
+    border-color: #5eead4;
+}
+
+.stat-card.tetfund {
+    background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+    border-color: #c4b5fd;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-icon {
+    width: 24px;
+    height: 24px;
+    fill: #07294d;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #07294d;
+}
+
+/* Stat items */
+.stat-item {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-label {
+    font-weight: 500;
+    color: #475569;
+}
+
+.stat-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.stat-value.blue { color: #2563eb; }
+.stat-value.emerald { color: #059669; }
+.stat-value.amber { color: #d97706; }
+.stat-value.teal { color: #0d9488; }
+.stat-value.violet { color: #7c3aed; }
+
+.total-item {
+    background: #2563eb;
+    color: white;
+    margin-top: 1rem;
+}
+
+.total-item .stat-label,
+.total-item .stat-value {
+    color: white;
+}
+
+.balance-item {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #e5e7eb;
+    font-weight: 700;
+}
+
+/* Budget and IGR grid layouts */
+.budget-grid, .igr-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.small-stat-label {
+    font-size: 13px;
+    color: #4b5563;
+    margin-bottom: 5px;
+}
+
+.small-stat-value {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Table styles (for backward compatibility) */
+.stat-body {
+    padding: 0;
+}
+
+.stat-body .table {
+    margin-bottom: 0;
+    background: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.stat-body .table th {
+    background-color: #07294d;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    padding: 10px;
+}
+
+.stat-body .table td {
+    text-align: center;
+    border: 1px solid #dee2e6;
+    padding: 10px;
+}
+
+.stat-body .table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.stat-body .table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .year-title {
+        font-size: 1.5rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+        padding: 1rem;
+    }
+    
+    .card-title {
+        font-size: 1.125rem;
+    }
+    
+    .stat-value {
+        font-size: 1.125rem;
+    }
+    
+    .stat-body .table th,
+    .stat-body .table td {
+        padding: 8px 5px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    .card-title {
+        font-size: 1rem;
+    }
+    
+    .stat-label {
+        font-size: 0.875rem;
+    }
+    
+    .stat-value {
+        font-size: 1rem;
+    }
+    
+    .stat-body .table th,
+    .stat-body .table td {
+        padding: 6px 3px;
+        font-size: 13px;
+    }
+}
