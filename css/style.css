@@ -887,12 +887,13 @@ p {
     border-bottom: 1px solid #cecece;
     position: relative;
     padding: 10px 0;
+    text-align: center;
 }
 
 .logo img {
     transform: scale(0.6); /* Scale down by 40% without distortion */
-    transform-origin: left center; /* Keep alignment from the left */
-    margin-left: 50px;
+    transform-origin: center center; /* Center alignment */
+    margin: 0 15px 0 0; /* Add space between logo and navigation */
 }
 
 
@@ -928,15 +929,17 @@ p {
 
 .header-logo-support .navbar {
     padding: 0;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .header-logo-support .navbar .navbar-nav li {
-    margin-right: 20px;
+    margin-right: 10px;
     position: relative;
 }
 
 .header-logo-support .navbar .navbar-nav li a {
-    font-size: 10px;
+    font-size: 20px;
     font-weight: 350;
     color: #07294d;
     transition: all 0.4s linear;
@@ -1043,7 +1046,7 @@ p {
 }
 
 .navigation .navbar .navbar-nav li a{
-    font-size: 12px;
+    font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: #000000;
