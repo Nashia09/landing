@@ -887,13 +887,12 @@ p {
     border-bottom: 1px solid #cecece;
     position: relative;
     padding: 10px 0;
-    text-align: center;
 }
 
 .logo img {
     transform: scale(0.6); /* Scale down by 40% without distortion */
-    transform-origin: center center; /* Center alignment */
-    margin: 0 15px 0 0; /* Add space between logo and navigation */
+    transform-origin:  center; /* Left alignment */
+    margin-left: 52px; /* Remove margin */
 }
 
 
@@ -939,8 +938,8 @@ p {
 }
 
 .header-logo-support .navbar .navbar-nav li a {
-    font-size: 13px;
-    font-weight: 350;
+    font-size: 15px;
+    font-weight: 450;
     color: #07294d;
     transition: all 0.4s linear;
     padding: 5px 0;
