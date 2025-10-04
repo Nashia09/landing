@@ -161,6 +161,7 @@ p {
     -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
     background-color: #28a745;
+    margin-bottom:39px;
 }
 .main-btn:hover{
     color: #28a745;
@@ -406,8 +407,7 @@ p {
 
 .header-top{
     background-color: #333333;
-    padding-top: 10px;
-    padding-bottom: 10px;
+   
 }
 .header-contact{}
 .header-contact ul{}
@@ -1301,7 +1301,7 @@ p {
 ======================================================*/
 
 .single-slider{
-    padding-bottom: 300px;
+    /* padding-bottom: 100px; */
 }
 
 .slider-cont{
@@ -1309,7 +1309,7 @@ p {
     z-index: 5;
 }
 .slider-cont h1{
-    font-size: 60px;
+    font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #fff;
