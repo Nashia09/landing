@@ -1310,6 +1310,7 @@ p {
 
 .single-slider{
     /* padding-bottom: 100px; */
+    height: 105%; /* Increased height by 5% */
 }
 
 .slider-cont{
