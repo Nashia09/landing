@@ -4378,9 +4378,10 @@ p.form-message.error {
 
 /* Passport-size image styling for About section */
 .passport-photo {
-  width: 150px !important;   /* approx. 35x45mm aspect (scaled) */
-  height: 200px !important;
+  width: 280px !important;   /* larger passport-style size */
+  height: 280px !important;  /* maintain 3:4 portrait aspect */
   object-fit: cover;
+  margin-left: 70px;
   border-radius: 6px;
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
 }
@@ -4399,6 +4400,41 @@ p.form-message.error {
 .navbar-nav .nav-item a {
   padding: 0.25rem 0.5rem; /* subtle click area without crowding */
   display: inline-block;
+}
+
+/* Reduce top spacing of VC message section */
+#about-part {
+  padding-top: 0 !important; /* remove top padding */
+  margin-top: 0 !important;
+}
+#about-part .container,
+#about-part .row,
+#about-part .col-lg-6 {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Stylish green divider between sections */
+.section-divider {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, #0f5132 0%, #198754 50%, #0f5132 100%);
+  border-radius: 2px;
+  margin: 4px 0 8px 0; /* tighter spacing */
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+.section-divider::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 8px;
+  height: 8px;
+  background: #198754;
+  border-radius: 2px;
+  top: -3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
 }
 
 
