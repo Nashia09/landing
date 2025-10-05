@@ -4376,3 +4376,35 @@ p.form-message.error {
 
 
 
+/* Passport-size image styling for About section */
+.passport-photo {
+  width: 150px !important;   /* approx. 35x45mm aspect (scaled) */
+  height: 200px !important;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+/* Reduce paragraph text size in About section */
+#about-part p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Header nav links spacing */
+.navbar-nav {
+  display: flex;
+  gap: 16px; /* add space between nav items */
+}
+.navbar-nav .nav-item a {
+  padding: 0.25rem 0.5rem; /* subtle click area without crowding */
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
