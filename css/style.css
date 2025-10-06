@@ -161,7 +161,7 @@ p {
     -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
     background-color: #28a745;
-    margin-bottom:39px;
+    margin-bottom:9px;
 }
 .main-btn:hover{
     color: #28a745;
@@ -1571,6 +1571,7 @@ p {
     margin-top: -150px;
     position: relative;
     z-index: 5;
+   
 }
 
 .category-text{
@@ -4436,8 +4437,11 @@ p.form-message.error {
 
 
 
-
-
+#statistics-summary{
+   background-color:#f8f8f0;
+   margin-bottom: 100px;
+   padding-bottom: 0;
+}
 
 
 /* Unified statistics section: compact grid and smaller typography */
