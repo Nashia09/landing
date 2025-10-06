@@ -1738,16 +1738,19 @@ p {
 }
 
 .apply .apply-cont {
-    padding: 45px 50px 50px;
+    padding: 35px 30px 40px;
 }
 .apply .apply-cont h3{
-    font-size: 30px;
+    font-size: 22px;
     color: #fff;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
 }
 .apply .apply-cont p{
+    font-size: 14px;
     color: #fff;
-    padding-bottom: 45px;
+    padding-bottom: 0;
+    line-height: 1.5;
+    margin-bottom: 0;
 }
 .apply .apply-cont .main-btn:hover{
     border-color: #28a745;
@@ -4372,6 +4375,46 @@ p.form-message.error {
 	padding-bottom: 15px;
 }
 
+/* Responsive adjustments for apply boxes */
+@media (max-width: 768px) {
+    .apply .apply-cont {
+        height: auto !important;
+        min-height: 180px;
+        padding: 25px 20px 30px;
+    }
+    .apply .apply-cont h3 {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    .apply .apply-cont p {
+        font-size: 13px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .apply .row [class*="col-lg-3"] {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .apply .apply-cont {
+        height: 200px !important;
+        padding: 30px 25px 35px;
+    }
+    .apply .apply-cont h3 {
+        font-size: 20px;
+    }
+    .apply .apply-cont p {
+        font-size: 13px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .apply .row [class*="col-lg-3"] {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
 
 
 
