@@ -153,7 +153,7 @@ p {
     font-weight: 700;
 	line-height: 35px;
 	border-radius: 5px;
-    color: #333333;
+    color: #ffffff;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -162,11 +162,13 @@ p {
     transition: 0.4s ease-in-out;
     background-color: #28a745;
     margin-bottom:9px;
+    text-decoration: none;
 }
 .main-btn:hover{
-    color: #28a745;
-    border-color: #333333;
-    background-color: #333333;
+    color: #ffffff;
+    border-color: #1e7e34;
+    background-color: #1e7e34;
+    text-decoration: none;
 }
 
 
@@ -1727,7 +1729,7 @@ p {
 }
 
 .apply-color-1{
-    background-color: #f8b500;
+    background-color: #252423;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
@@ -1737,7 +1739,7 @@ p {
     border-bottom-right-radius: 5px;
 }
 .apply-color-3{
-    background-color: #f8b500;
+    background-color: #252423;
     border-radius: 5px;
 }
 .apply-color-4{
@@ -1754,12 +1756,12 @@ p {
     padding-bottom: 12px;
 }
 .apply .apply-cont h6{
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     padding-bottom: 8px;
 }
 .apply .apply-cont p{
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
     padding-bottom: 0;
     line-height: 1.5;
