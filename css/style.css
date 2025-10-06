@@ -4497,6 +4497,12 @@ p.form-message.error {
   line-height: 1;
   font-weight: bold;
 }
+/* Style for units - make them smaller */
+#statistics-summary .singel-counter h4 .unit {
+  font-size: 10px !important;
+  font-weight: normal;
+  vertical-align: top;
+}
 #statistics-summary .singel-counter p {
   font-size: 12px !important;
   margin: 2px 0 0 0;
