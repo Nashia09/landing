@@ -171,6 +171,20 @@ p {
     text-decoration: none;
 }
 
+.text-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.text-link:hover {
+    color: #cccccc;
+    text-decoration: none;
+}
+
 
 
 /*===== All Section Title Style =====*/
