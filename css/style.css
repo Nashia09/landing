@@ -1727,12 +1727,12 @@ p {
 }
 
 .apply-color-1{
-    background-color: #333333;
+    background-color: #FF6B47;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 .apply-color-2{
-    background-color: #092e56;
+    background-color: #20B2AA;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -1741,6 +1741,11 @@ p {
     padding: 35px 30px 40px;
 }
 .apply .apply-cont h3{
+    font-size: 22px;
+    color: #fff;
+    padding-bottom: 12px;
+}
+.apply .apply-cont h6{
     font-size: 22px;
     color: #fff;
     padding-bottom: 12px;
@@ -4386,6 +4391,11 @@ p.form-message.error {
         font-size: 18px;
         padding-bottom: 10px;
     }
+    .apply .apply-cont h6 {
+        font-size: 18px;
+        color: #fff;
+        padding-bottom: 10px;
+    }
     .apply .apply-cont p {
         font-size: 13px;
         padding-bottom: 0;
@@ -4404,6 +4414,10 @@ p.form-message.error {
     }
     .apply .apply-cont h3 {
         font-size: 20px;
+    }
+    .apply .apply-cont h6 {
+        font-size: 20px;
+        color: #fff;
     }
     .apply .apply-cont p {
         font-size: 13px;
