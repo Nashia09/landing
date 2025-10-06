@@ -1727,7 +1727,7 @@ p {
 }
 
 .apply-color-1{
-    background-color: #FF6B47;
+    background-color: #f8b500;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
@@ -1735,6 +1735,14 @@ p {
     background-color: #20B2AA;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+.apply-color-3{
+    background-color: #f8b500;
+    border-radius: 5px;
+}
+.apply-color-4{
+    background-color: #20B2AA;
+    border-radius: 5px;
 }
 
 .apply .apply-cont {
@@ -1746,9 +1754,9 @@ p {
     padding-bottom: 12px;
 }
 .apply .apply-cont h6{
-    font-size: 22px;
+    font-size: 16px;
     color: #fff;
-    padding-bottom: 12px;
+    padding-bottom: 8px;
 }
 .apply .apply-cont p{
     font-size: 14px;
@@ -4392,9 +4400,9 @@ p.form-message.error {
         padding-bottom: 10px;
     }
     .apply .apply-cont h6 {
-        font-size: 18px;
+        font-size: 14px;
         color: #fff;
-        padding-bottom: 10px;
+        padding-bottom: 6px;
     }
     .apply .apply-cont p {
         font-size: 13px;
@@ -4416,7 +4424,7 @@ p.form-message.error {
         font-size: 20px;
     }
     .apply .apply-cont h6 {
-        font-size: 20px;
+        font-size: 15px;
         color: #fff;
     }
     .apply .apply-cont p {
