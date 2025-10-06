@@ -239,3 +239,38 @@
         font-size: 13px;
     }
 }
+
+/* Stats intro box overrides to mirror 'Best platform' sizing/alignment */
+#statistics .category-form.stats-box-form {
+    margin-top: 0; /* remove negative margin from default category-form */
+    max-width: 640px;
+}
+#statistics .category-form.stats-box-form .form-title {
+    padding-top: 24px;
+    padding-bottom: 28px;
+}
+#statistics .category-form.stats-box-form .form-title h3 {
+    font-size: 28px;
+}
+#statistics .category-form.stats-box-form .form-title span {
+    font-size: 18px;
+}
+#statistics .category-form.stats-box-form .main-form {
+    padding: 20px 30px 30px;
+}
+#statistics .category-form.stats-box-form .main-form p {
+    margin-bottom: 12px;
+}
+#statistics .category-form.stats-box-form .main-btn {
+    width: auto; /* keep button compact */
+    line-height: 44px;
+    padding: 0 24px;
+}
+
+/* Lightly scale down KPI counters in statistics page */
+#statistics .singel-counter span {
+    font-size: 28px;
+}
+#statistics .singel-counter p {
+    font-size: 14px;
+}
