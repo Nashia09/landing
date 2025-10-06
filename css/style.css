@@ -4607,7 +4607,7 @@ p.form-message.error {
 
 /* Faculty Section Compact White Background Styles */
 .faculty-compact-card {
-    background: white !important;
+    background: #f8f8f0 !important;
     border-radius: 8px;
     padding: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
