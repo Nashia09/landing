@@ -172,7 +172,7 @@ p {
 }
 
 .text-link {
-    color: #00ff88;
+    color: #155724;
     text-decoration: none;
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
@@ -181,7 +181,7 @@ p {
     transition: 0.3s ease;
 }
 .text-link:hover {
-    color: #00cc66;
+    color: #1e7e34;
     text-decoration: none;
 }
 
@@ -2276,6 +2276,8 @@ p {
 .singel-news .news-thum{}
 .singel-news .news-thum img{
     width: 100%;
+    max-height: 120px;
+    object-fit: cover;
     border-radius: 5px;
 }
 .singel-news .news-cont{}
@@ -2318,6 +2320,10 @@ p {
 }
 .news-list .news-cont ul li a{
     font-size: 14px;
+}
+.singel-news .news-cont p{
+    line-height: 1.4;
+    margin-bottom: 10px;
 }
 
 
@@ -4609,14 +4615,20 @@ p.form-message.error {
 .faculty-compact-card {
     background: #f8f8f0 !important;
     border-radius: 8px;
-    padding: 8px;
+    padding: 4px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    margin-bottom: 8px;
-    height: auto;
+    margin-bottom: 4px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
 }
 
 .faculty-compact-card .news-cont {
     padding: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .faculty-compact-card .news-cont h3 {
