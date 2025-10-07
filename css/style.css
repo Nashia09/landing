@@ -4808,15 +4808,21 @@ p.form-message.error {
     font-size: 0.3em !important; /* 70% reduction - now 30% of original size */
 }
 
-/* Make faculty images touch the edges */
+/* Make faculty images touch the edges and take full width */
 .faculty-compact-card .news-thum {
     padding: 0 !important;
     margin: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 .faculty-compact-card .news-thum img {
     border-radius: 8px 8px 0 0 !important;
     margin: 0;
+    width: 100% !important;
+    height: 120px !important;
+    object-fit: cover !important;
+    display: block;
 }
 
 
