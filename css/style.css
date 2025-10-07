@@ -2087,16 +2087,24 @@ p {
 
 .singel-publication {
 	background-color: #fff;
-	padding: 5px;
+	padding: 5px 0;
 	border-radius: 5px;
 }
 .singel-publication .image{
     position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 .singel-publication .image img{
     width: 100%;
-    max-height: 120px;
-    object-fit: cover;
+    height: 300px;
+    object-fit: contain;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 .singel-publication .image .add-cart{
     position: absolute;
@@ -2276,11 +2284,12 @@ p {
 
 .singel-news{}
 .singel-news .news-thum{}
-.singel-news .news-thum img{
+.singel-news .news-thum img {
     width: 100%;
-    max-height: 80px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     border-radius: 5px;
+    max-height: 200px;
 }
 .singel-news .news-cont{}
 .singel-news .news-cont ul li{
@@ -2323,10 +2332,14 @@ p {
 .news-list .news-cont ul li a{
     font-size: 12px;
 }
+.news-list .news-cont p{
+    text-align: justify;
+}
 .singel-news .news-cont p{
     line-height: 1.3;
     margin-bottom: 5px;
     font-size: 13px;
+    text-align: justify;
 }
 
 
@@ -4476,8 +4489,8 @@ p.form-message.error {
 
 /* Passport-size image styling for About section */
 .passport-photo {
-  width: 260px !important;   /* larger passport-style size */
-  height: 280px !important;  /* maintain 3:4 portrait aspect */
+  width: 320px !important;   /* increased width for larger images */
+  height: 280px !important;  /* maintain portrait aspect */
   object-fit: cover;
   margin-left: 50px;
   border-radius: 6px;
@@ -4618,63 +4631,82 @@ p.form-message.error {
 .faculty-compact-card {
     background: #f8f8f0 !important;
     border-radius: 8px;
-    padding: 4px;
+    padding: 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     margin-bottom: 4px;
-    height: 220px;
+    min-height: 220px;
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.faculty-compact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 .faculty-compact-card .news-cont {
-    padding: 0;
+    padding: 8px;
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .faculty-compact-card .news-cont h3 {
     color: #333 !important;
-    font-size: 16px !important;
-    line-height: 1.3;
-    margin-bottom: 4px;
+    font-size: 9px !important;
+    line-height: 1.4;
+    margin-bottom: 8px !important;
+    text-align: left !important;
+    font-weight: 600 !important;
 }
 
 .faculty-compact-card .news-cont p {
     color: #666 !important;
-    font-size: 12px !important;
-    line-height: 1.4;
+    font-size: 7px !important;
+    line-height: 1.5;
     margin-bottom: 0;
+    text-align: left !important;
 }
 
 .faculty-compact-card .news-cont ul {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    padding-left: 0;
+    list-style: none;
 }
 
 .faculty-compact-card .news-cont ul li {
-    margin-right: 10px;
+    margin-right: 15px;
+    display: inline-block;
 }
 
 .faculty-compact-card .news-cont ul li a {
     color: #007bff !important;
-    font-size: 11px !important;
+    font-size: 6px !important;
+    text-decoration: none;
+}
+
+.faculty-compact-card .news-cont ul li a:hover {
+    color: #0056b3 !important;
 }
 
 .faculty-compact-card .news-cont ul li a i {
-    font-size: 10px;
-    margin-right: 3px;
+    font-size: 6px;
+    margin-right: 5px;
 }
 
 .faculty-compact-card .news-cont ul li a span {
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 600;
 }
 
-/* Custom styling for patnar-logo section - reduce logo size by 80% */
+/* Custom styling for patnar-logo section - reduce logo size by 40% from original */
 .singel-patnar img {
-    width: 20%;
+    width: 12%;
     height: auto;
-    max-width: 100px;
+    max-width: 60px;
 }
 
 /* Footer reduction by 50% - all elements made 50% of original size, maintaining full width */
@@ -4769,6 +4801,22 @@ p.form-message.error {
 #footer-part {
     margin-top: 4px !important; /* 80% reduction from typical 20px */
     margin-bottom: 4px !important; /* 80% reduction from typical 20px */
+}
+
+/* Reduce copyright text size by 70% */
+.footer-copyright p {
+    font-size: 0.3em !important; /* 70% reduction - now 30% of original size */
+}
+
+/* Make faculty images touch the edges */
+.faculty-compact-card .news-thum {
+    padding: 0 !important;
+    margin: 0;
+}
+
+.faculty-compact-card .news-thum img {
+    border-radius: 8px 8px 0 0 !important;
+    margin: 0;
 }
 
 
