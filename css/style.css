@@ -2087,7 +2087,7 @@ p {
 
 .singel-publication {
 	background-color: #fff;
-	padding: 20px;
+	padding: 5px;
 	border-radius: 5px;
 }
 .singel-publication .image{
@@ -2095,6 +2095,8 @@ p {
 }
 .singel-publication .image img{
     width: 100%;
+    max-height: 120px;
+    object-fit: cover;
 }
 .singel-publication .image .add-cart{
     position: absolute;
@@ -2148,7 +2150,7 @@ p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 25px;
+    padding-top: 5px;
 }
 .singel-publication .cont .name{
     width: 50%;
@@ -2157,7 +2159,7 @@ p {
     display: block;
 }
 .singel-publication .cont .name a h6{
-    font-size: 14px;
+    font-size: 12px;
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s linear;
 }
@@ -2166,16 +2168,16 @@ p {
 }
 
 .singel-publication .cont .name span{
-    font-size: 13px;
+    font-size: 11px;
     color: #8a8a8a;
 }
 .singel-publication .cont .button{
     width: 50%;
 }
 .singel-publication .cont .button a{
-    padding: 0 10px;
-    font-size: 12px;
-    line-height: 35px;
+    padding: 0 8px;
+    font-size: 10px;
+    line-height: 25px;
 }
 
 /*=====================================================
@@ -2276,14 +2278,14 @@ p {
 .singel-news .news-thum{}
 .singel-news .news-thum img{
     width: 100%;
-    max-height: 120px;
+    max-height: 80px;
     object-fit: cover;
     border-radius: 5px;
 }
 .singel-news .news-cont{}
 .singel-news .news-cont ul li{
     display: inline-block;
-    margin-right: 25px;
+    margin-right: 15px;
 }
 .singel-news .news-cont ul li:last-child{
     margin-right: 0;
@@ -2291,7 +2293,7 @@ p {
 
 .singel-news .news-cont ul li a{
     color: #8a8a8a;
-    font-size: 15px;
+    font-size: 12px;
 }
 .singel-news .news-cont ul li a i{
     color: #28a745;
@@ -2304,10 +2306,10 @@ p {
     display: block;
 }
 .singel-news .news-cont a h3{
-    font-size: 24px;
+    font-size: 18px;
     color: #000;
-    padding-bottom: 20px;
-    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-top: 5px;
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s linear;
 }
@@ -2316,14 +2318,15 @@ p {
 }
 
 .news-list .news-cont h3{
-    font-size: 20px;
+    font-size: 16px;
 }
 .news-list .news-cont ul li a{
-    font-size: 14px;
+    font-size: 12px;
 }
 .singel-news .news-cont p{
-    line-height: 1.4;
-    margin-bottom: 10px;
+    line-height: 1.3;
+    margin-bottom: 5px;
+    font-size: 13px;
 }
 
 
@@ -4665,6 +4668,107 @@ p.form-message.error {
 
 .faculty-compact-card .news-cont ul li a span {
     font-size: 10px;
+}
+
+/* Custom styling for patnar-logo section - reduce logo size by 80% */
+.singel-patnar img {
+    width: 20%;
+    height: auto;
+    max-width: 100px;
+}
+
+/* Footer reduction by 50% - all elements made 50% of original size, maintaining full width */
+
+.footer-about {
+    padding-right: 25px; /* was 50px */
+}
+
+.footer-about p {
+    padding-top: 7.5px; /* was 15px */
+    font-size: 12px; /* 50% reduction from typical 14px */
+}
+
+.footer-about ul li {
+    margin-right: 7.5px; /* was 15px */
+}
+
+.footer-about ul li a {
+    width: 17.5px; /* was 35px */
+    line-height: 17.5px; /* was 35px */
+    font-size: 7.5px; /* was 15px */
+}
+
+.footer-title h6 {
+    font-size: 9px; /* was 18px */
+}
+
+.footer-link ul li {
+    line-height: 17.5px; /* was 35px */
+}
+
+.footer-link ul li a {
+    font-size: 7.5px; /* was 15px */
+}
+
+.footer-link ul li a i {
+    margin-right: 4px; /* was 8px */
+}
+
+.footer-link ul li a:hover i {
+    margin-right: 7.5px; /* was 15px */
+}
+
+.footer-address ul li {
+    margin-bottom: 5px; /* was 10px */
+}
+
+.footer-address ul li .icon i {
+    font-size: 9px; /* was 18px */
+    top: 2.5px; /* was 5px */
+}
+
+.footer-address ul li .cont {
+    padding-left: 17.5px; /* was 35px */
+}
+
+.footer-address ul li .cont p {
+    font-size: 12px; /* 50% reduction from typical 14px */
+}
+
+.footer-copyright .copyright p {
+    font-size: 12px; /* 50% reduction from typical 14px */
+    padding: 6px; /* reduced padding */
+}
+
+/* Reduce footer section padding classes by 50% */
+.footer-about.mt-40,
+.footer-link.mt-40,
+.footer-address.mt-40 {
+    margin-top: 20px !important; /* was 40px */
+}
+
+.footer-title.pb-25 {
+    padding-bottom: 12.5px !important; /* was 25px */
+}
+
+.footer-about ul.mt-20 {
+    margin-top: 10px !important; /* was 20px */
+}
+
+/* Additional 80% reduction for top and bottom padding */
+.footer-top {
+    padding-top: 10px !important; /* 80% reduction from typical 50px */
+    padding-bottom: 10px !important; /* 80% reduction from typical 50px */
+}
+
+.footer-copyright {
+    padding-top: 3px !important; /* 80% reduction from typical 15px */
+    padding-bottom: 3px !important; /* 80% reduction from typical 15px */
+}
+
+#footer-part {
+    margin-top: 4px !important; /* 80% reduction from typical 20px */
+    margin-bottom: 4px !important; /* 80% reduction from typical 20px */
 }
 
 
