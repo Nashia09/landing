@@ -267,7 +267,7 @@
 	padding: 0px 35px 20px;
 }
 
-.single-slider {
+.single-slider, .video-slider {
 	padding-bottom: 200px;
 	padding-top: 100px;
 }
