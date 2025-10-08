@@ -2311,6 +2311,7 @@ p {
 .singel-news .news-cont ul li{
     display: inline-block;
     margin-right: 0;
+
 }
 .singel-news .news-cont ul li:last-child{
     margin-right: 0;
@@ -4784,7 +4785,7 @@ p.form-message.error {
 }
 
 .footer-copyright .copyright p {
-    font-size: 12px; /* 50% reduction from typical 14px */
+    font-size: 14px; /* 50% reduction from typical 14px */
     padding: 6px; /* reduced padding */
 }
 
@@ -4821,7 +4822,7 @@ p.form-message.error {
 
 /* Reduce copyright text size by 70% */
 .footer-copyright p {
-    font-size: 0.3em !important; /* 70% reduction - now 30% of original size */
+    font-size: 0.5em !important; /* 70% reduction - now 30% of original size */
 }
 
 /* Make faculty images touch the edges and take full width */
