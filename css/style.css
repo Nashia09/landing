@@ -2306,7 +2306,6 @@ p {
     object-fit: contain;
     border-radius: 5px;
     max-height: 200px;
-    object-position: left;
 }
 .singel-news .news-cont{}
 .singel-news .news-cont ul li{
