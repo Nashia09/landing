@@ -2310,7 +2310,7 @@ p {
 .singel-news .news-cont{}
 .singel-news .news-cont ul li{
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 0;
 }
 .singel-news .news-cont ul li:last-child{
     margin-right: 0;
