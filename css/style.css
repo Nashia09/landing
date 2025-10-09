@@ -4824,7 +4824,7 @@ p.form-message.error {
 
 /* Reduce copyright text size by 70% */
 .footer-copyright p {
-    font-size: 0.5em !important; /* 70% reduction - now 30% of original size */
+    font-size: 1em !important; /* 70% reduction - now 30% of original size */
 }
 
 /* Make faculty images touch the edges and take full width */
@@ -4843,11 +4843,3 @@ p.form-message.error {
     object-fit: cover !important;
     display: block;
 }
-
-
-
-
-
-
-
-
