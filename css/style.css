@@ -4723,9 +4723,9 @@ p.form-message.error {
 
 /* Custom styling for patnar-logo section - reduce logo size by 40% from original */
 .singel-patnar img {
-    width: 100%;
+    width: 50%;
     height: auto;
-    max-width: 100px;
+    max-width: 50px;
 }
 
 /* Footer reduction by 50% - all elements made 50% of original size, maintaining full width */
