@@ -2301,11 +2301,13 @@ p {
 .singel-news{}
 .singel-news .news-thum{}
 .singel-news .news-thum img {
-    width: 100%;
+    width: 300px;
     height: auto;
     object-fit: contain;
     border-radius: 5px;
     max-height: 200px;
+    object-position: center;
+    transform: scale(1);
 }
 .singel-news .news-cont{}
 .singel-news .news-cont ul li{
