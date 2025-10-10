@@ -119,9 +119,9 @@ ul,ol {
 }
 
 p {
-	font-size: 16px;
+	font-size: 10px;
 	font-weight: 400;
-	line-height: 28px;
+	line-height: 20px;
 	color: #505050;
 	margin: 0px;
 }
@@ -2103,8 +2103,8 @@ p {
 
 .singel-publication {
 	background-color: #fff;
-	padding: 5px 0;
-	border-radius: 5px;
+	padding: 10px 0;
+	border-radius: 10px;
 }
 .singel-publication .image{
     position: relative;
@@ -2192,7 +2192,7 @@ p {
 }
 
 .singel-publication .cont .name span{
-    font-size: 11px;
+    font-size: 5px;
     color: #8a8a8a;
 }
 .singel-publication .cont .button{
