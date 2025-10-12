@@ -4884,7 +4884,10 @@ p.form-message.error {
     font-size: 12px;
     font-weight: 600;
 }
-
+#patnar-logo{
+    margin: 0;
+    padding: 0;
+}
 /* Custom styling for patnar-logo section - reduce logo size by 40% from original */
 .singel-patnar img {
     width: 50%;
