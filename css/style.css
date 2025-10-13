@@ -2525,6 +2525,130 @@ p {
     text-align: justify;
 }
 
+
+/*=====================================================
+    LIST OF COURSES css 
+======================================================*/
+
+/* Section wrapper */
+.course-part {
+  background-color: #f7f7f7;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container holding cards in one horizontal line */
+.courses-container {
+  display: flex;
+  flex-wrap: nowrap; /* keeps them in a single row */
+  justify-content: center;
+  align-items: stretch; /* makes all cards equal height */  
+  gap: 20px;
+  overflow-x: auto; /* allows horizontal scroll on smaller screens */
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* Individual card */
+.course-part .card {
+  flex: 0 0 280px; /* uniform width */
+  height: 240px;   /* uniform height */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.course-part .card:hover {
+  transform: translateY(-5px);
+}
+
+/* Green top bar */
+.course-part .card-header {
+  background-color: #fff;
+  height: 30px;
+}
+
+/* Card content */
+.course-part .card-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Title */
+.course-part .card-content h2 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+/* Date line */
+.course-part .date {
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+/* Description */
+.course-part .description {
+  color: #444;
+  font-size: 13px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* show only 3 lines */
+  -webkit-box-orient: vertical;
+}
+
+/* Read More button */
+.course-part .read-more {
+  background-color: #2d7c47;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.course-part .read-more:hover {
+  background-color: #256c3d;
+}
+
+/* Responsive: stack neatly on smaller screens */
+@media (max-width: 900px) {
+  .courses-container {
+    flex-wrap: wrap;
+  }
+
+  .course-part .card {
+    flex: 0 0 45%;
+    height: 240px;
+  }
+}
+
+@media (max-width: 500px) {
+  .course-part .card {
+    flex: 0 0 90%;
+    height: 220px;
+  }
+}
+
+
+
 /*=====================================================
     13. FOOTER css 
 ======================================================*/
