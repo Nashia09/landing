@@ -2356,11 +2356,11 @@ p {
 }
 
 .singel-publication .cont .name span{
-    font-size: 5px;
+    font-size: 10px;
     color: #8a8a8a;
 }
 .singel-publication .cont .button{
-    width: 50%;
+    width: 45%;
 }
 .singel-publication .cont .button a{
     padding: 0 8px;
@@ -4962,7 +4962,7 @@ p.form-message.error {
 
 .faculty-compact-card .news-cont h3 {
     color: #333 !important;
-    font-size: 9px !important;
+    font-size: 11px !important;
     line-height: 1.4;
     margin-bottom: 8px !important;
     text-align: left !important;
@@ -4971,7 +4971,7 @@ p.form-message.error {
 
 .faculty-compact-card .news-cont p {
     color: #666 !important;
-    font-size: 7px !important;
+    font-size: 8px !important;
     line-height: 1.5;
     margin-bottom: 0;
     text-align: left !important;
@@ -4990,7 +4990,7 @@ p.form-message.error {
 
 .faculty-compact-card .news-cont ul li a {
     color: #007bff !important;
-    font-size: 6px !important;
+    font-size: 9px !important;
     text-decoration: none;
 }
 
@@ -4999,7 +4999,7 @@ p.form-message.error {
 }
 
 .faculty-compact-card .news-cont ul li a i {
-    font-size: 6px;
+    font-size: 7px;
     margin-right: 5px;
 }
 
