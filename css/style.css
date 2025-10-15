@@ -228,7 +228,7 @@ p {
 	border: 1px solid #FFF;
 	width: 48px;
 	height: 48px;
-	background-color: #FFF;
+	background-color: #fff;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -2526,13 +2526,67 @@ p {
 }
 
 
+
+/* =====================================================
+    12. UNIVERSITY EVENT css
+
+======================================================*/
+
+.course-part {
+  padding: 10px 0;
+  background: #f9f9f9; /* optional background color */
+}
+
+.event-title {
+  margin-bottom: 1px;
+}
+
+.event-header {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+.apply-conti {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  height: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.apply-conti h6 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.apply-conti p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.text-link {
+  color: #007bff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
 /*=====================================================
     LIST OF COURSES css 
 ======================================================*/
 
 /* Section wrapper */
 .course-part {
-  background-color: #f7f7f7;
+  background-color: #fff;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   display: flex;
@@ -2554,7 +2608,7 @@ p {
 /* Individual card */
 .course-part .card {
   flex: 0 0 280px; /* uniform width */
-  height: 240px;   /* uniform height */
+  height: 250px;   /* uniform height */
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -2569,7 +2623,7 @@ p {
   transform: translateY(-5px);
 }
 
-/* Green top bar */
+/* white top bar */
 .course-part .card-header {
   background-color: #fff;
   height: 30px;
@@ -2588,13 +2642,14 @@ p {
 .course-part .card-content h2 {
   font-size: 16px;
   color: #333;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
+  text-align: center
 }
 
 /* Date line */
-.course-part .date {
+/*.course-part .date {
   color: #999;
-  font-size: 12px;
+  font-size: 10px;
   margin-bottom: 6px;
 }
 
@@ -2606,7 +2661,12 @@ p {
   margin-bottom: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
+  display: block;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  transform: scaleX(1.5); /* stretches horizontally */
+  transform-origin: left center;
   -webkit-line-clamp: 3; /* show only 3 lines */
   -webkit-box-orient: vertical;
 }
@@ -2616,8 +2676,8 @@ p {
   background-color: #2d7c47;
   color: #fff;
   border: none;
-  padding: 6px 12px;
-  font-size: 12px;
+  padding: 5px 10px;
+  font-size: 10px;
   border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -5110,6 +5170,10 @@ p.form-message.error {
 #footer-part {
     margin-top: 4px !important; /* 80% reduction from typical 20px */
     margin-bottom: 4px !important; /* 80% reduction from typical 20px */
+}
+
+.logo img {
+ 
 }
 
 /* Reduce copyright text size by 70% */
