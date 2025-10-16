@@ -910,7 +910,10 @@ p {
 .logo img {
     transform: scale(0.6); /* Scale down by 40% without distortion */
     transform-origin:  center; /* Left alignment */
-    margin-left: 52px; /* Remove margin */
+    margin-left: 0px; /* Remove margin */
+    padding: 0;
+    display: flex;
+    justify-content: start;
 }
 
 
@@ -5172,9 +5175,8 @@ p.form-message.error {
     margin-bottom: 4px !important; /* 80% reduction from typical 20px */
 }
 
-.logo img {
- 
-}
+
+
 
 /* Reduce copyright text size by 70% */
 .footer-copyright p {
